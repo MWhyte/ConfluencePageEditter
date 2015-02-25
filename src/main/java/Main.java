@@ -42,7 +42,7 @@ public class Main {
     }
 
     public static void main(final String[] args) throws Exception {
-        final long pageId = 557066;
+        final long pageId = 557070;
 
         HttpClient client = getNewHttpClient();
 
@@ -50,7 +50,7 @@ public class Main {
         String pageObj = null;
         HttpEntity pageEntity = null;
         try {
-            HttpGet getPageRequest = new HttpGet(getContentRestUrl(pageId, new String[]{"body.storage", "version"}));
+            HttpGet getPageRequest = new HttpGet(getContentRestUrl(pageId, new String[]{"body.storage", "version", "ancestors"}));
             HttpResponse getPageResponse = client.execute(getPageRequest);
             pageEntity = getPageResponse.getEntity();
 

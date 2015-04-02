@@ -1,3 +1,6 @@
+package com.nigeeks.app;
+
+import com.nigeeks.ssl.MySSLSocketFactory;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.http.HttpEntity;
